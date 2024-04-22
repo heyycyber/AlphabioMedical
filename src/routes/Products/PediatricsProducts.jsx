@@ -1,0 +1,72 @@
+import {React,useState,useEffect} from "react";
+import NavBar from "../../Components/navbar.jsx";
+import PediaParallex from "../../pallarex/Products/PediaParallex.tsx";
+import { ParallaxProvider } from "react-scroll-parallax";
+import FooTer from "../../Components/footer";
+import Container from "react-bootstrap/esm/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import otherCard from "../../Images/otherMedicine.jpg";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import KeyboardArrowRightTwoToneIcon from '@mui/icons-material/KeyboardArrowRightTwoTone';
+import SvgIcon from "@mui/material/SvgIcon";
+import Axios from "axios";
+const PediatricsProducts = () => {
+  const [ourProducts, setOurProducts] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from your API
+    Axios
+      .get("https://alphabio-medical-9vgnw.ondigitalocean.app/pediaProducts")
+      .then((response) => {
+        const productData = response.data.map((product) => {
+          
+          return {
+            ...product,
+            
+          };
+        });
+
+        setOurProducts(productData);
+      })
+      .catch((error) => {
+        console.error("Error fetching products:", error);
+      });
+  }, []);
+  return (
+    <>
+    <NavBar />
+    <ParallaxProvider>
+      <PediaParallex />
+      <div className="centerParallex  fullParallex ">
+        
+      </div>
+      <Container fluid>
+          <Row>
+            <div className="cardContainer">
+            <Col lg={12}>
+              {" "}
+              <Row xs={1} sm={2} md={3}>
+              {ourProducts.map(product => (
+                <Col className="productDetailCard" key={product._id}>
+                  <span className="googleFont">{product.productName}</span>
+                  <Link to={`/our-products/pedia-products/${product._id}`}>
+                  <Card className="_card" style={{ overflow: "hidden" }}>
+                  <img src={`https://alphabio-medical-9vgnw.ondigitalocean.app/Images/`+product.productImage} alt="" />
+                  </Card></Link>
+                  <Link to={`/our-products/pedia-products/${product._id}`}><Button variant="link">Details<span><SvgIcon component={KeyboardArrowRightTwoToneIcon}  inheritViewBox fontSize="small"/></span></Button>{' '}</Link>
+                </Col> ))}  
+              </Row>
+            </Col></div>
+          </Row>
+         
+        </Container>
+    </ParallaxProvider>
+    <FooTer />
+  </>
+  )
+}
+
+export default PediatricsProducts
