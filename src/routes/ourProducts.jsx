@@ -53,7 +53,7 @@ const OurProducts = () => {
                     <h1 className="googleFont">{product.productTypeName}</h1>
                     <Link to={`/our-products/${product.productTypeTitle}`}>
                       <Card className="_card" style={{ overflow: "hidden" }}>
-                        <img src={`http://localhost:3009/Images/`+product.productTypeImage} alt="" />
+                        <img src={`https://alphabio-medical-9vgnw.ondigitalocean.app/Images/`+product.productTypeImage} alt="" />
                       </Card>
                     </Link>
                   </Col> ))} 
