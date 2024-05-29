@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary googleFont" fixed="top">
       <Container fluid>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="#" className="navbarBrand">
           <img src={logo} className="AppLogo" alt="logo" /><b>AlphaBio Medical Pvt.Ltd</b>
         </Navbar.Brand>
 

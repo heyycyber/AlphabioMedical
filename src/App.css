@@ -43,6 +43,9 @@
   height: 11vmin;
   pointer-events: none;
 }
+.navbarBrand{
+  font-size:2vw;
+}
 .LinkBorder {
   border-bottom: 3px solid #ff000000;
   text-decoration: none;
@@ -429,6 +432,7 @@
     gap: 18px;
     font-weight: bold;
   }
+  
 }
 
 /* --------------------------------------------  MEDIA QUERIERS MIN ----------------------------------------------------- */
@@ -439,6 +443,9 @@
   ._card {
     width: 100%;
     overflow: hidden;
+  }
+  .navbarBrand{
+    font-size:4vw;
   }
 }
 

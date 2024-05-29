@@ -18,6 +18,7 @@ import PediaProductDetail from "./routes/Product Details/PediaProductDetails";
 import DermaProductDetail from "./routes/Product Details/DermaProductDetails";
 import EntProductDetail from "./routes/Product Details/EntProductDetails";
 import GeneralProductDetail from "./routes/Product Details/GeneralProductDetails";
+// import UploadProductType from "./routes/uploadProductType";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
