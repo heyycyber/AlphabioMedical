@@ -16,8 +16,6 @@ const NewProducts = () => {
         console.error("Failed to fetch products:", error);
       });
   }, []);
-
-  console.log("yo"+ products+"lo")
   return (
     <Carousel data-bs-theme="dark">
       {products.map((product) => (
@@ -25,7 +23,7 @@ const NewProducts = () => {
           <div className="newProductLaunch">
             <img
               className="d-block w-100"
-              alt="First slide"
+              alt="Slide"
               src={`https://alphabio-medical-9vgnw.ondigitalocean.app/Images/` + product.productImage}
               viewBox="0 0 24 24"
             />

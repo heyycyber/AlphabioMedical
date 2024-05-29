@@ -140,9 +140,9 @@ const AboutUs = () => {
                         <Card style={{ width: "auto" }}  className="aboutOurTeamCard">
                           <Card.Img variant="top" src={fakeImg} className="teamImg" />
                           <Card.Body>
-                            <Card.Title>Bashir Ahmad Bhat</Card.Title>
+                            <Card.Title>Mr.  Pradeep Jain</Card.Title>
                             <Card.Text style={{opacity:".7"}}>
-                              Managing Director
+                             CMD
                             </Card.Text>
                           </Card.Body>
                         </Card>
@@ -151,35 +151,14 @@ const AboutUs = () => {
                       <Card style={{ width: "auto" }} className="aboutOurTeamCard">
                           <Card.Img variant="top" src={fakeImg} className="teamImg" />
                           <Card.Body>
-                            <Card.Title>Munawar Sultan</Card.Title>
+                            <Card.Title>Dr. Y S Desai</Card.Title>
                             <Card.Text style={{opacity:".7"}}>
-                              Managing Director
+                             Director
                             </Card.Text>
                           </Card.Body>
                         </Card>
                       </Col>
-                      <Col>
-                      <Card style={{ width: "auto" }}  className="aboutOurTeamCard">
-                          <Card.Img variant="top" src={fakeImg} className="teamImg" />
-                          <Card.Body>
-                            <Card.Title>Parvaiz Ahmad Bhat</Card.Title>
-                            <Card.Text style={{opacity:".7"}}>
-                              Managing Director
-                            </Card.Text>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                      <Col>
-                      <Card style={{ width: "auto" }}  className="aboutOurTeamCard">
-                          <Card.Img variant="top" src={fakeImg} className="teamImg" />
-                          <Card.Body>
-                            <Card.Title>Arshad Ahmad </Card.Title>
-                            <Card.Text style={{opacity:".7"}}>
-                              Managing Director
-                            </Card.Text>
-                          </Card.Body>
-                        </Card>
-                      </Col>
+                      
                     </Row>
                   </Col>
                 </div>
