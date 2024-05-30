@@ -190,6 +190,10 @@
 .productDetailsContainer{
   margin-top: 20vh;
 }
+.productImages{
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
 /* --------------------------------------------  VIDEO  ----------------------------------------------------- */
 
 .dnaVid {

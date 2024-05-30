@@ -79,8 +79,7 @@ const ProductDetails = () => {
             </Row>
           </>
         ) : (
-          <p>Product not found</p>
-        )}
+<p>Loading...</p>        )}
       </Container>
     </>
   );

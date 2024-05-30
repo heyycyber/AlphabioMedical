@@ -55,7 +55,7 @@ const DermaProducts = () => {
                   <span className="googleFont">{product.productName}</span>
                   <Link to={`/our-products/derma-products/${product._id}`}>
                   <Card className="_card" style={{ overflow: "hidden" }}>
-                  <img src={`https://goldfish-app-cy9wf.ondigitalocean.app/Images/`+product.productImage} alt="" />
+                  <img src={`https://goldfish-app-cy9wf.ondigitalocean.app/Images/`+product.productImage} alt="" className="productImages"/>
                   </Card></Link>
                   <Link to={`/our-products/derma-products/${product._id}`}><Button variant="link">Details<span><SvgIcon component={KeyboardArrowRightTwoToneIcon}  inheritViewBox fontSize="small"/></span></Button>{' '}</Link>
                 </Col> ))}  
