@@ -20,7 +20,7 @@ const OurProducts = () => {
   useEffect(() => {
     // Fetch data from your API
     axios
-      .get("https://alphabio-medical-9vgnw.ondigitalocean.app/ourProducts")
+      .get("https://goldfish-app-cy9wf.ondigitalocean.app/ourProducts")
       .then((response) => {
         const productData = response.data.map((product) => {
           
@@ -53,7 +53,7 @@ const OurProducts = () => {
                     <h1 className="googleFont">{product.productTypeName}</h1>
                     <Link to={`/our-products/${product.productTypeTitle}`}>
                       <Card className="_card" style={{ overflow: "hidden" }}>
-                        <img src={`https://alphabio-medical-9vgnw.ondigitalocean.app/Images/`+product.productTypeImage} alt="" />
+                        <img src={`https://goldfish-app-cy9wf.ondigitalocean.app/Images/`+product.productTypeImage} alt="" />
                       </Card>
                     </Link>
                   </Col> ))} 
