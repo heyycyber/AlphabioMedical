@@ -8,7 +8,7 @@ const NewProducts = () => {
 
   useEffect(() => {
     Axios
-      .get("https://alphabio-medical-9vgnw.ondigitalocean.app/newLaunchProducts")
+      .get("https://goldfish-app-cy9wf.ondigitalocean.app/newLaunchProducts")
       .then(response => {
         setProducts(response.data);
       })
@@ -24,7 +24,7 @@ const NewProducts = () => {
             <img
               className="d-block w-100"
               alt="Slide"
-              src={`https://alphabio-medical-9vgnw.ondigitalocean.app/Images/` + product.productImage}
+              src={`https://goldfish-app-cy9wf.ondigitalocean.app/Images/` + product.productImage}
               viewBox="0 0 24 24"
             />
             <div className="newProductLaunchContent">

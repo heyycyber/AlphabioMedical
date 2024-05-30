@@ -9,7 +9,7 @@ const ProductDetails = () => {
 
   useEffect(() => {
     // Fetch the data for UserList
-    fetch("https://alphabio-medical-9vgnw.ondigitalocean.app/dermaProducts")
+    fetch("https://goldfish-app-cy9wf.ondigitalocean.app/dermaProducts")
       .then((resp) => resp.json())
       .then((data) => setPediaProducts(data));
   }, []);
@@ -33,7 +33,7 @@ const ProductDetails = () => {
                       width={"30%"}
                       
                       src={
-                        `https://alphabio-medical-9vgnw.ondigitalocean.app/Images/` +
+                        `https://goldfish-app-cy9wf.ondigitalocean.app/Images/` +
                         selectedProduct.productImage
                       }
                       thumbnail

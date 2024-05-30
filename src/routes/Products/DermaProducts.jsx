@@ -20,7 +20,7 @@ const DermaProducts = () => {
   useEffect(() => {
     // Fetch data from your API
     Axios
-      .get("https://alphabio-medical-9vgnw.ondigitalocean.app/dermaProducts")
+      .get("https://goldfish-app-cy9wf.ondigitalocean.app/dermaProducts")
       .then((response) => {
         const productData = response.data.map((product) => {
           
@@ -55,7 +55,7 @@ const DermaProducts = () => {
                   <span className="googleFont">{product.productName}</span>
                   <Link to={`/our-products/derma-products/${product._id}`}>
                   <Card className="_card" style={{ overflow: "hidden" }}>
-                  <img src={`https://alphabio-medical-9vgnw.ondigitalocean.app/Images/`+product.productImage} alt="" />
+                  <img src={`https://goldfish-app-cy9wf.ondigitalocean.app/Images/`+product.productImage} alt="" />
                   </Card></Link>
                   <Link to={`/our-products/derma-products/${product._id}`}><Button variant="link">Details<span><SvgIcon component={KeyboardArrowRightTwoToneIcon}  inheritViewBox fontSize="small"/></span></Button>{' '}</Link>
                 </Col> ))}  
